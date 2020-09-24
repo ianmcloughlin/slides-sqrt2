@@ -1,45 +1,56 @@
 \section{The Square Root of 2}
 
 \begin{frame}
-
-  \[\sqrt{2}\] \pause
-
-  \[\sqrt{2} \times \sqrt{2} = 2\] \pause
-
-  \vspace{4mm}
-
-  \centering
-  \begin{tikzpicture}
-    \draw[draw=gmitred] (0,0) -- (0,3) -- (3,3) -- (3,0) --node [midway, below, black] {$1$} (0,0);
-    \draw[gmitblue] (0,0) -- (3,3) node [midway, above left, black] {$\sqrt{2}$};
-  \end{tikzpicture}
-
+  \begin{columns}
+    \begin{column}{0.3\textwidth}
+      \centering
+      \begin{tikzpicture}
+        \draw[draw=gmitblue] (0,0) --node [midway, left, black] {$1$} (0,3) -- (3,3) -- (3,0) --node [midway, below, black] {$1$} (0,0);
+        \draw[gmitred] (3,0) -- (0,3) node [midway, above right, black] {$\sqrt{2}$};
+      \end{tikzpicture}
+    \end{column}
+    {\color{gmitgrey!30}\vrule{}} \hspace{0.1\textwidth}
+    \begin{column}{0.5\textwidth}
+      $\sqrt{2} \times \sqrt{2} = 2$ \\[8mm]
+      $d^2 = \sqrt{l^2 + w^2}$ \\[8mm]
+      $d^2 = \sqrt{1^2 + 1^2}$ \\[8mm]
+      $d^2 = \sqrt{2}$ \\[8mm]
+    \end{column}
+  \end{columns}
 \end{frame}
 
+
 \begin{frame}
-
-  \[\sqrt{2} = \frac{a}{b} \] \pause
-  
-  \[gcd(a,b) = 1\] \pause
-  
-  \[2 = \frac{a^2}{b^2} \] \pause
-
-  \[2b^2 = a^2 \] \pause
-
-  \[2 \mid a^2 \Rightarrow 2 \mid a\] \pause
-
+  \begin{columns}
+    \begin{column}{0.3\textwidth}
+      \color{gmitblue} \fontsize{30}{10}
+      \[\frac{a}{b}\]
+    \end{column}
+    {\color{gmitgrey!30}\vrule{}} \hspace{0.1\textwidth}
+    \begin{column}{0.5\textwidth}
+      $\sqrt{2} = \dfrac{a}{b}$ \\[8mm]
+      $\Rightarrow 2 = \dfrac{a^2}{b^2}$ \\[8mm]
+      $\Rightarrow 2b^2 = a^2$ \\[8mm]
+      $\Rightarrow 2 \mid a^2$ \\[8mm]
+      $\Rightarrow 2 \mid a$
+    \end{column}
+  \end{columns}
 \end{frame}
 
+
 \begin{frame}
-
-  \[2b^2 = a^2 \] \pause
-
-  \[2 \mid a \Rightarrow 2^2 \mid a^2\] \pause
-
-  \[4 \mid b^2\] \pause
-
-  \[2 \mid b\] \pause
-
-  \[gcd(a,b) = 1\]
-
+  \begin{columns}
+    \begin{column}{0.3\textwidth}
+      \color{gmitblue} \fontsize{30}{10}
+      \[2 \mid a\]
+    \end{column}
+    {\color{gmitgrey!30}\vrule{}} \hspace{0.1\textwidth}
+    \begin{column}{0.5\textwidth}
+      $2 \mid a$ \\[8mm]
+      $\Rightarrow 4 \mid a^2$ \\[8mm]
+      $\Rightarrow 4 \mid 2b^2$ \\[8mm]
+      $\Rightarrow 2 \mid b^2$ \\[8mm]
+      $\Rightarrow 2 \mid b$
+    \end{column}
+  \end{columns}
 \end{frame}
